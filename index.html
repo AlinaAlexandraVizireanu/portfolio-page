@@ -8,14 +8,44 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>alinavizireanu</title>
   </head>
   <body class="font-[Inter] h-screen bg-slate-950 text-white">
+    <div class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
+    </div>
+
     <div class="container mx-auto relative">
       <header class="sticky top-0 backdrop-blur-sm">
         <nav class="flex justify-between">
           <div class="flex justify-between w-full">
-            <h3 class="font-bold self-center text-purple-400">
+            <h3 class="font-bold self-center text-purple-300">
               alinavizireanu
             </h3>
             <img
@@ -29,23 +59,23 @@
           >
             <ul class="flex md:flex-row flex-col gap-4 mt-1">
               <li>
-                <a class="duration-300 hover:text-purple-400" href="#">Home</a>
+                <a class="duration-300 hover:text-purple-300" href="#">Home</a>
               </li>
               <li>
-                <a class="duration-300 hover:text-purple-400" href="#">About</a>
+                <a class="duration-300 hover:text-purple-300" href="#">About</a>
               </li>
               <li>
-                <a class="duration-300 hover:text-purple-400" href="#"
+                <a class="duration-300 hover:text-purple-300" href="#"
                   >Skills</a
                 >
               </li>
               <li>
-                <a class="duration-300 hover:text-purple-400" href="#"
+                <a class="duration-300 hover:text-purple-300" href="#"
                   >Projects</a
                 >
               </li>
               <li>
-                <a class="duration-300 hover:text-purple-400" href="#"
+                <a class="duration-300 hover:text-purple-300" href="#"
                   >Contact</a
                 >
               </li>
@@ -54,17 +84,19 @@
         </nav>
       </header>
       <div class="section_1 flex flex-col h-screen justify-center text-center">
-        <h1 class="text-5xl mb-4">
-          I'm <span class="text-purple-400">Alina Alexandra VIZIREANU</span>
+        <h1 class="text-5xl mb-4 text-white">
+          I'm <span class="text-purple-300">Alina Alexandra VIZIREANU</span>
         </h1>
-        <p class="text-slate-400 max-w-lg mx-auto">
+        <p class="text-white max-w-lg mx-auto">
           I'm a full-stack developer with expertise in both front-end and
           back-end technologies. I have a passion for building scalable,
           user-friendly applications, and I enjoy working on projects that
           challenge me to learn and grow.
         </p>
       </div>
-      <div class="section_2 border-t-2 border-purple-400 grid grid-cols-3 gap-4 py-10 text-center">
+      <div
+        class="section_2 border-t-2 border-purple-400 grid grid-cols-3 gap-4 py-10 text-center"
+      >
         <div>
           <h1 class="text-3xl mb-2">HTML</h1>
           <p class="text-slate-400">2 years experience</p>
