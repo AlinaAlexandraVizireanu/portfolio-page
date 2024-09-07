@@ -50,7 +50,9 @@
 }
 
 svg {
-  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .g1 {
