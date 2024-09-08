@@ -12,37 +12,36 @@
     <title>alinavizireanu</title>
   </head>
   <body class="font-[Inter] h-screen bg-slate-950 text-white box-border">
-    <div class="gradient-bg">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
-            />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="gradients-container">
-        <div class="g1"></div>
-        <div class="g2"></div>
-        <div class="g3"></div>
-        <div class="g4"></div>
-        <div class="g5"></div>
-        <div class="interactive"></div>
+    <div class="wrapper">
+      <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
       </div>
-    </div>
-
-    <div class="container mx-auto px-4 relative">
-      <header class="sticky top-0 backdrop-blur-sm">
+      <header class="container mx-auto px-4 sticky top-0 backdrop-blur-sm z-10">
         <nav class="flex justify-between">
           <div class="flex justify-between w-full">
             <h3 class="font-bold self-center text-purple-300">
@@ -97,257 +96,264 @@
           </div>
         </nav>
       </header>
-      <div class="section_1 flex flex-col h-screen justify-center text-center">
-        <h1 class="md:text-5xl text-3xl mb-4 text-white">
-          I'm <span class="text-purple-300">Alina Alexandra VIZIREANU</span>
-        </h1>
-        <p class="md:text-base text-sm text-white max-w-lg mx-auto">
-          I'm a full-stack developer with expertise in both front-end and
-          back-end technologies. I have a passion for building scalable,
-          user-friendly applications, and I enjoy working on projects that
-          challenge me to learn and grow.
-        </p>
-      </div>
-      <div
-        class="section_2 grid md:grid-cols-3 sm:grid-cols-2 md:gap-4 sm:gap-7 gap-9 py-10 text-center"
-      >
-        <div>
-          <h1 class="text-3xl mb-2">HTML</h1>
-          <p class="text-slate-400">2 years experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">CSS</h1>
-          <p class="text-slate-400">2 years experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">Javascript</h1>
-          <p class="text-slate-400">1 year experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">Node</h1>
-          <p class="text-slate-400">6 months experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">Express</h1>
-          <p class="text-slate-400">6 months experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">MongoDB</h1>
-          <p class="text-slate-400">6 months experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">EJS</h1>
-          <p class="text-slate-400">6 months experience</p>
-        </div>
-        <div>
-          <h1 class="text-3xl mb-2">Tailwind</h1>
-          <p class="text-slate-400">1 month experience</p>
-        </div>
-        <div class="sm:col-span-2 md:col-span-1">
-          <h1 class="text-3xl mb-2">React</h1>
-          <p class="text-slate-400">1 month experience</p>
-        </div>
-      </div>
-      <div class="section_3 my-20">
-        <div class="flex justify-between">
-          <h1 class="md:text-5xl text-3xl">Projects</h1>
-          <a
-            href=""
-            class="md:text-lg text-base uppercase self-center duration-300 hover:text-pink-400 underline decoration-purple-300 decoration-2 underline-offset-8"
-            >Contact me</a
-          >
+      <div class="container mx-auto px-4 relative">
+        <div
+          class="section_1 flex flex-col h-screen justify-center text-center"
+        >
+          <h1 class="md:text-5xl text-3xl mb-4 text-white">
+            I'm <span class="text-purple-300">Alina Alexandra VIZIREANU</span>
+          </h1>
+          <p class="md:text-base text-sm text-white max-w-lg mx-auto">
+            I'm a full-stack developer with expertise in both front-end and
+            back-end technologies. I have a passion for building scalable,
+            user-friendly applications, and I enjoy working on projects that
+            challenge me to learn and grow.
+          </p>
         </div>
         <div
-          class="projects_container grid gap-x-10 gap-y-16 lg:grid-cols-2 mt-16 justify-center"
+          class="section_2 grid md:grid-cols-3 sm:grid-cols-2 md:gap-4 sm:gap-7 gap-9 py-10 text-center"
         >
-          <div class="project1_container max-w-[600px]">
-            <img src="./assets/images/PlanetsFact.jpg" alt="..." />
-            <div class="flex justify-between mt-4">
-              <div>
-                <h2 class="uppercase md:text-lg text-base">Planets Fact</h2>
-                <p class="uppercase text-slate-400 md:text-sm text-xs">
-                  HTML CSS Javascript
-                </p>
-              </div>
-              <div class="self-center">
-                <a
-                  href="https://alinaalexandravizireanu.github.io/planets-fact-site/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/AlinaAlexandraVizireanu/planets-fact-site/tree/main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Github</a
-                >
+          <div>
+            <h1 class="text-3xl mb-2">HTML</h1>
+            <p class="text-slate-400">2 years experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">CSS</h1>
+            <p class="text-slate-400">2 years experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">Javascript</h1>
+            <p class="text-slate-400">1 year experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">Node</h1>
+            <p class="text-slate-400">6 months experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">Express</h1>
+            <p class="text-slate-400">6 months experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">MongoDB</h1>
+            <p class="text-slate-400">6 months experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">EJS</h1>
+            <p class="text-slate-400">6 months experience</p>
+          </div>
+          <div>
+            <h1 class="text-3xl mb-2">Tailwind</h1>
+            <p class="text-slate-400">1 month experience</p>
+          </div>
+          <div class="sm:col-span-2 md:col-span-1">
+            <h1 class="text-3xl mb-2">React</h1>
+            <p class="text-slate-400">1 month experience</p>
+          </div>
+        </div>
+        <div class="section_3 my-20">
+          <div class="flex justify-between">
+            <h1 class="md:text-5xl text-3xl">Projects</h1>
+            <a
+              href=""
+              class="md:text-lg text-base uppercase self-center duration-300 hover:text-pink-400 underline decoration-purple-300 decoration-2 underline-offset-8"
+              >Contact me</a
+            >
+          </div>
+          <div
+            class="projects_container grid gap-x-10 gap-y-16 lg:grid-cols-2 mt-16 justify-center"
+          >
+            <div class="project1_container max-w-[600px]">
+              <img src="./assets/images/PlanetsFact.jpg" alt="..." />
+              <div class="flex justify-between mt-4">
+                <div>
+                  <h2 class="uppercase md:text-lg text-base">Planets Fact</h2>
+                  <p class="uppercase text-slate-400 md:text-sm text-xs">
+                    HTML CSS Javascript
+                  </p>
+                </div>
+                <div class="self-center">
+                  <a
+                    href="https://alinaalexandravizireanu.github.io/planets-fact-site/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/AlinaAlexandraVizireanu/planets-fact-site/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="project2_container max-w-[600px] justify-self-end">
-            <img src="./assets/images/vocabulary.jpg" alt="..." />
-            <div class="flex justify-between mt-4">
-              <div>
-                <h2 class="uppercase md:text-lg text-base">Vocabulary App</h2>
-                <p class="uppercase text-slate-400 md:text-sm text-xs">
-                  HTML CSS Javascript
-                </p>
-              </div>
-              <div class="self-center">
-                <a
-                  href="https://alinaalexandravizireanu.github.io/vocabulary-app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/AlinaAlexandraVizireanu/vocabulary-app/tree/main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project3_container max-w-[600px]">
-            <img src="./assets/images/YelpCamp.jpg" alt="..." />
-            <div class="flex justify-between mt-4">
-              <div>
-                <h2 class="uppercase md:text-lg text-base">Yelp Camp</h2>
-                <p class="uppercase text-slate-400 md:text-sm text-xs">
-                  full-stack
-                </p>
-              </div>
-              <div class="self-center">
-                <a
-                  href="https://yelp-camp-st81.onrender.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/AlinaAlexandraVizireanu/yelp-camp?tab=readme-ov-file"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Github</a
-                >
+            <div class="project2_container max-w-[600px] justify-self-end">
+              <img src="./assets/images/vocabulary.jpg" alt="..." />
+              <div class="flex justify-between mt-4">
+                <div>
+                  <h2 class="uppercase md:text-lg text-base">Vocabulary App</h2>
+                  <p class="uppercase text-slate-400 md:text-sm text-xs">
+                    HTML CSS Javascript
+                  </p>
+                </div>
+                <div class="self-center">
+                  <a
+                    href="https://alinaalexandravizireanu.github.io/vocabulary-app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/AlinaAlexandraVizireanu/vocabulary-app/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="project4_container max-w-[600px] justify-self-end">
-            <img src="./assets/images/PlanetsFact.jpg" alt="..." />
-            <div class="flex justify-between mt-4">
-              <div>
-                <h2 class="uppercase md:text-lg text-base">Planets Fact</h2>
-                <p class="uppercase text-slate-400 md:text-sm text-xs">
-                  HTML CSS Javascript
-                </p>
+            <div class="project3_container max-w-[600px]">
+              <img src="./assets/images/YelpCamp.jpg" alt="..." />
+              <div class="flex justify-between mt-4">
+                <div>
+                  <h2 class="uppercase md:text-lg text-base">Yelp Camp</h2>
+                  <p class="uppercase text-slate-400 md:text-sm text-xs">
+                    full-stack
+                  </p>
+                </div>
+                <div class="self-center">
+                  <a
+                    href="https://yelp-camp-st81.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/AlinaAlexandraVizireanu/yelp-camp?tab=readme-ov-file"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Github</a
+                  >
+                </div>
               </div>
-              <div class="self-center">
-                <a
-                  href="https://alinaalexandravizireanu.github.io/planets-fact-site/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/AlinaAlexandraVizireanu/planets-fact-site/tree/main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
-                  >Github</a
-                >
+            </div>
+            <div class="project4_container max-w-[600px] justify-self-end">
+              <img src="./assets/images/PlanetsFact.jpg" alt="..." />
+              <div class="flex justify-between mt-4">
+                <div>
+                  <h2 class="uppercase md:text-lg text-base">Planets Fact</h2>
+                  <p class="uppercase text-slate-400 md:text-sm text-xs">
+                    HTML CSS Javascript
+                  </p>
+                </div>
+                <div class="self-center">
+                  <a
+                    href="https://alinaalexandravizireanu.github.io/planets-fact-site/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block mr-4 text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/AlinaAlexandraVizireanu/planets-fact-site/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block text-purple-300 tracking-wider border-2 border-purple-300 md:px-5 md:py-2 px-3 py-1 rounded duration-300 hover:text-white hover:bg-purple-300 hover:shadow-[0_0_20px_#d8b4fe]"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <footer>
+        <div class="bg-gradient-to-t from-purple-950 to-slate-950 px-5">
+          <h1 class="text-4xl text-center">Contact</h1>
+          <p class="text-center max-w-[500px] mx-auto my-3">
+            If you're interested in working with me, I would love to hear more
+            about your project. Please fill out the form, and I'll get back to
+            you as soon as possible.
+          </p>
+          <form
+            action="https://formsubmit.co/vizireanualina15@yahoo.com"
+            method="POST"
+          >
+            <div class="flex flex-col gap-5 max-w-[550px] mx-auto mt-10 pb-7">
+              <input
+                class="text-black p-2.5 rounded-lg"
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+              />
+              <input
+                class="text-black p-2.5 rounded-lg"
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+              />
+              <textarea
+                class="text-black p-2.5 rounded-lg"
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+              <button class="bg-black p-2.5 rounded-lg" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="container mx-auto p-10 flex justify-between">
+          <h3 class="font-bold text-purple-300 text-lg self-center">
+            alinavizireanu
+          </h3>
+          <div class="logos flex gap-5">
+            <a
+              href="https://github.com/AlinaAlexandraVizireanu"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/github-mark-white.svg"
+                alt=""
+                srcset=""
+                class="md:size-10 size-7"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alina-alexandra-vizireanu-36b1721b1/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/linkedin-svgrepo-com.svg"
+                alt=""
+                srcset=""
+                class="md:size-10 size-7"
+              />
+            </a>
+            <a
+              href="https://www.frontendmentor.io/profile/AlinaAlexandraVizireanu"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/frontendmentor-svgrepo-com.svg"
+                alt=""
+                srcset=""
+                class="md:size-10 size-7"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div class="bg-gradient-to-t from-purple-950 to-slate-950 px-5">
-        <h1 class="text-4xl text-center">Contact</h1>
-        <p class="text-center max-w-[500px] mx-auto my-3">
-          If you're interested in working with me, I would love to hear more
-          about your project. Please fill out the form, and I'll get back to you
-          as soon as possible.
-        </p>
-        <form
-          action="https://formsubmit.co/vizireanualina15@yahoo.com"
-          method="POST"
-        >
-          <div class="flex flex-col gap-5 max-w-[550px] mx-auto mt-10 pb-7">
-            <input
-              class="text-black p-2.5 rounded-lg"
-              type="text"
-              placeholder="Name"
-              name="name"
-              required
-            />
-            <input
-              class="text-black p-2.5 rounded-lg"
-              type="email"
-              placeholder="Email"
-              name="email"
-              required
-            />
-            <textarea
-              class="text-black p-2.5 rounded-lg"
-              placeholder="Message"
-              name="message"
-              required
-            ></textarea>
-            <button class="bg-black p-2.5 rounded-lg" type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="container mx-auto p-10 flex justify-between">
-        <h3 class="font-bold text-purple-300 text-lg self-center">
-          alinavizireanu
-        </h3>
-        <div class="logos flex gap-5">
-          <a href="https://github.com/AlinaAlexandraVizireanu" target="_blank">
-            <img
-              src="./assets/images/github-mark-white.svg"
-              alt=""
-              srcset=""
-              class="md:size-10 size-7"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alina-alexandra-vizireanu-36b1721b1/"
-            target="_blank"
-          >
-            <img
-              src="./assets/images/linkedin-svgrepo-com.svg"
-              alt=""
-              srcset=""
-              class="md:size-10 size-7"
-            />
-          </a>
-          <a
-            href="https://www.frontendmentor.io/profile/AlinaAlexandraVizireanu"
-            target="_blank"
-          >
-            <img
-              src="./assets/images/frontendmentor-svgrepo-com.svg"
-              alt=""
-              srcset=""
-              class="md:size-10 size-7"
-            />
-          </a>
-        </div>
-      </div>
-    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
